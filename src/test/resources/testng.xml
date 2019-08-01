@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Sanity suite" parallel="tests" thread-count="2">
+
+    <test name="device-farm test">
+        <parameter name="appName" value="wishtrip"/>
+        <parameter name="mobilePlatform" value="android"/>
+        <classes>
+            <class name="cucumber.runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
